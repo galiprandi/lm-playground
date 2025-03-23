@@ -20,7 +20,7 @@ export const availableModels: Parameters<typeof fastifyLm>[1]["models"] = [
     name: 'google',
     provider: 'google',
     model: 'gemini-2.0-flash-lite',
-    apiKey: 'AIzaSyBAM89oxzwOzkMC9Mf82BGQGIZJrZmrC1Y',
+    apiKey: process.env.GOOGLE_KEY!,
   },
   {
     name: 'claude',
